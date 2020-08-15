@@ -1,0 +1,95 @@
+body {
+    background-color:#000000;
+    font-family: Raleway;
+    
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+.title {
+    margin-top: 13%;
+}
+
+.submitbutton {
+    border-radius: 15px;
+    color: black;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.submitbutton:hover {
+    background-color: #535353;
+    border-color: #535353;
+}
+
+.submitbutton:active {
+    background-color: #535353;
+    border-color: #535353;
+}
+
+.submitbutton:focus {
+    background-color: #535353;
+    border-color: #535353;
+}
+
+.submitbutton:visited {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 255, 255);
+}
+
+.closebutton {
+    border-radius: 15px;
+    color: black;
+    width: 150px;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(104, 104, 104);
+    margin-top: 20px;
+}
+
+.submitbutton{
+    border-color: rgb(104, 104, 104);
+}
+
+.modalbtn:hover {
+    background-color: #797979;
+    border-color: #797979;
+}
+
+.inputField {
+    border-radius: 10px;
+}
+
+.login {
+    margin-top: 7%;
+}
+
+.labels {
+    color: white;
+}
+
+.modalfor {
+    margin-top: 14%;
+}
+
+#welcome {
+    font-family: Raleway;
+    margin-top: 20%;
+    font-weight: 900;
+    color: #ffffff;
+    text-align: center;
+    font-size:72px;
+}
+
+#register {
+    
+}
+/* https://colorhunt.co/palette/189835 */
+/* https://colorhunt.co/palette/189837 */

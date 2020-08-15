@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/secondpage.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="JS/secondpage.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap" rel="stylesheet">
+  </head>
+<body class="main">
+  <div class="container">
+    <div class="d-flex justify-content-center">
+    <h1 id="title">view your classes</h1>
+    </div>
+    <div class="videos">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <a class="nav-link active tabs" id="video1-tab" data-toggle="tab" href="#video1" role="tab" aria-controls="home" aria-selected="true">GESPORT</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link tabs" id="video2-tab" data-toggle="tab" href="#video2" role="tab" aria-controls="profile" aria-selected="false">GEARTAP</a>
+        </li>
+        <li class="nav-item" role="presentation">
+          <a class="nav-link tabs" id="video3-tab" data-toggle="tab" href="#video3" role="tab" aria-controls="contact" aria-selected="false">GEFILI</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link tabs" id="video4-tab" data-toggle="tab" href="#video4" role="tab" aria-controls="contact" aria-selected="false">CCICOMP</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="video1" role="tabpanel" aria-labelledby="video1-tab">
+          <video controls autoplay height="700" width="1100">
+            <source src="Media/glitch_vid_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="tab-pane fade" id="video2" role="tabpanel" aria-labelledby="video2-tab">
+          <video controls height="700" width="1100">
+            <source src="Media/glitch_vid_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="tab-pane fade" id="video3" role="tabpanel" aria-labelledby="video3-tab">
+          <video controls height="700" width="1100">
+            <source src="Media/glitch_vid_1.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="tab-pane fade" id="video4" role="tabpanel" aria-labelledby="video4-tab">
+          <video controls height="700" width="1100">
+            <source src="Media/glitch_vid_1.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+    <div class="code d-flex justify-content-center">
+      <input type="number" id="code" placeholder="code">
+    </div>
+  </div>
+</body>
+</html>
