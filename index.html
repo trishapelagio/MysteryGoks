@@ -18,6 +18,7 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -29,21 +30,26 @@
 
     <div class="container-flex main" id="register">
         <div class="row">
-            <div class="col-4"></div>
-            <div class="col-4 login">         
-                <h1 id="welcome">Welcome back.</h1>
-                <div class="form-group">
-                    <input type="text" class="form-control inputField" id="inputUsername" name="username" placeholder="enter username">
+            <div class="col-3"></div>
+            <div class="col-6 login">         
+                <h1 id="welcome">welcome back.</h1>
+                <div class="row">
+                    <div class="col-3"></div>
+                    <div class="col-6">
+                        <div class="form-group">
+                            <input type="text" class="form-control inputField" id="inputUsername" name="username" placeholder="enter username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control inputField" id="inputPassword" name="password" placeholder="password">
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button type="button" class="btn btn-primary submitbutton btn-dark" id="submitbtn" data-toggle="modal" data-target="#exampleModal" disabled>
+                                Submit
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-3"></div>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control inputField" id="inputPassword" name="password" placeholder="password">
-                </div>
-                <div class="d-flex justify-content-end">
-                    <button type="button" class="btn btn-primary submitbutton btn-dark" id="submitbtn" data-toggle="modal" data-target="#exampleModal" disabled>
-                        Submit
-                    </button>
-                </div>
-
                 <!-- Modal -->
                 <div class="modal fade modalfor" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog" role="document">
@@ -67,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="col-4"> </div>
+            <div class="col-3"> </div>
 
         </div>
         

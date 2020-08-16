@@ -1,0 +1,364 @@
+<html>
+<head>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css" integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/js/bootstrap.min.js" integrity="sha384-XEerZL0cuoUbHE4nZReLT7nx9gQrQreJekYhJD9WNWhH8nEW+0c5qq7aIo2Wl30J" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,531;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,531;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link href="CSS/page4.scss" rel="stylesheet/scss" type="text/css">
+    <script>
+        $(document).ready(function() {
+            $("#code").keyup(function(){
+                var val = $("#code").val();
+                if(val == "1234"){
+                    window.location.replace("page3.html");
+                }
+            })
+        });
+    </script>
+    <style>
+        @font-face {
+            font-family: 'font';
+            src: url('https://ff.static.1001fonts.net/v/a/valium.regular.ttf') format(truetype),
+              url('https://ff.static.1001fonts.net/f/r/frank-knows.regular.ttf') format(truetype);
+        }
+        .time{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            position: absolute;
+            font-size: 300;
+            font-family: 'Varela', sans-serif;
+            width: 45%;
+        }
+        #but, #timer {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Varela', sans-serif;
+            width: 45%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            font-size: 300;
+            color: rgb(255, 255, 255);
+        }
+        #but {
+            font-size: 100;
+            height: 1em;
+        }
+        #open:hover{
+            text-decoration: none;
+            color: rgb(87, 87, 87); 
+        }
+        a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        #code{
+            margin-top: 40px;
+            margin-bottom: 100px;
+            width: 130px;
+            height:30px;
+        }
+        #myVideo {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: 0;
+            -ms-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        /** Glitch **/
+        h1 {
+        text-align: center;
+        color: #fff;
+        font-size: 5em;
+        letter-spacing: 8px;
+        font-family: 'Press Start 2P';
+        font-weight: 400;
+        /*Create overlap*/
+        
+        margin: 0;
+        line-height: 0;
+        /*Animation*/
+        
+        animation: glitch1 2.5s infinite;
+        }
+
+        h1:nth-child(2) {
+        color: #67f3da;
+        animation: glitch2 2.5s infinite;
+        }
+
+        h1:nth-child(3) {
+        color: #f16f6f;
+        animation: glitch3 2.5s infinite;
+        }
+        /*Keyframes*/
+
+        @keyframes glitch1 {
+        0% {
+            transform: none;
+            opacity: 1;
+        }
+        7% {
+            transform: skew(-0.5deg, -0.9deg);
+            opacity: 0.75;
+        }
+        10% {
+            transform: none;
+            opacity: 1;
+        }
+        27% {
+            transform: none;
+            opacity: 1;
+        }
+        30% {
+            transform: skew(0.8deg, -0.1deg);
+            opacity: 0.75;
+        }
+        35% {
+            transform: none;
+            opacity: 1;
+        }
+        52% {
+            transform: none;
+            opacity: 1;
+        }
+        55% {
+            transform: skew(-1deg, 0.2deg);
+            opacity: 0.75;
+        }
+        50% {
+            transform: none;
+            opacity: 1;
+        }
+        72% {
+            transform: none;
+            opacity: 1;
+        }
+        75% {
+            transform: skew(0.4deg, 1deg);
+            opacity: 0.75;
+        }
+        80% {
+            transform: none;
+            opacity: 1;
+        }
+        100% {
+            transform: none;
+            opacity: 1;
+        }
+        }
+
+        @keyframes glitch2 {
+        0% {
+            transform: none;
+            opacity: 0.25;
+        }
+        7% {
+            transform: translate(-2px, -3px);
+            opacity: 0.5;
+        }
+        10% {
+            transform: none;
+            opacity: 0.25;
+        }
+        27% {
+            transform: none;
+            opacity: 0.25;
+        }
+        30% {
+            transform: translate(-5px, -2px);
+            opacity: 0.5;
+        }
+        35% {
+            transform: none;
+            opacity: 0.25;
+        }
+        52% {
+            transform: none;
+            opacity: 0.25;
+        }
+        55% {
+            transform: translate(-5px, -1px);
+            opacity: 0.5;
+        }
+        50% {
+            transform: none;
+            opacity: 0.25;
+        }
+        72% {
+            transform: none;
+            opacity: 0.25;
+        }
+        75% {
+            transform: translate(-2px, -6px);
+            opacity: 0.5;
+        }
+        80% {
+            transform: none;
+            opacity: 0.25;
+        }
+        100% {
+            transform: none;
+            opacity: 0.25;
+        }
+        }
+
+        @keyframes glitch3 {
+        0% {
+            transform: none;
+            opacity: 0.25;
+        }
+        7% {
+            transform: translate(2px, 3px);
+            opacity: 0.5;
+        }
+        10% {
+            transform: none;
+            opacity: 0.25;
+        }
+        27% {
+            transform: none;
+            opacity: 0.25;
+        }
+        30% {
+            transform: translate(5px, 2px);
+            opacity: 0.5;
+        }
+        35% {
+            transform: none;
+            opacity: 0.25;
+        }
+        52% {
+            transform: none;
+            opacity: 0.25;
+        }
+        55% {
+            transform: translate(5px, 1px);
+            opacity: 0.5;
+        }
+        50% {
+            transform: none;
+            opacity: 0.25;
+        }
+        72% {
+            transform: none;
+            opacity: 0.25;
+        }
+        75% {
+            transform: translate(2px, 6px);
+            opacity: 0.5;
+        }
+        80% {
+            transform: none;
+            opacity: 0.25;
+        }
+        100% {
+            transform: none;
+            opacity: 0.25;
+        }
+        }
+
+        .z{
+            position: relative;
+            z-index: 1;
+        }
+
+        .cont{
+            width: 70vw;
+            margin: 15vw auto;
+        }
+
+        .dline{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            position: absolute;
+            font-size: 300;
+            font-family: 'Varela', sans-serif;
+            width: 45%;
+        }
+
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+        -moz-appearance: textfield;
+        }
+    </style>
+    
+</head>
+
+<body style="background-color: black;">
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" id="myVideo">
+        <source src="Media/glitch_vid_1.mp4" type="video/mp4">
+    </video>
+    <div class="deadline">
+        <h1 class="dline">DEADLINE</h1>
+        <h1 class="dline">DEADLINE</h1>
+        <h1 class="dline">DEADLINE</h1>
+    </div>
+    <div class="z cont">
+        <div id="timer">
+          <h1 class="time"> </h1>
+          <h1 class="time"> </h1>
+          <h1 class="time"> </h1>
+        </div>
+    </div>
+    <div class="container z" style="visibility: hidden;">
+        <div id="but" class="row">
+            <div class="col d-flex justify-content-center">
+                <a  href="https://twitter.com/secret14976444/status/1291364132277510144?s=21" target="_blank" id="open"> OPEN</a>
+            </div>
+        </div>
+    </div>
+    <div class="row z">
+        <div class="col d-flex justify-content-center">
+            <input type="text" id="code" placeholder="     è̴̹͌́̂ņ̸̩̟̦̥̙͎̣̲̍̓̏͛̑̊̋͗̒̍͋̂̕ͅt̴̹̲̳̜̗̗̖̀̀͐͂͂̍̆̐̆̈̅̕e̶̡̢͔̺̳̙̫͎̭͓̓̈͌̾̚͝͝r̸̡̛͎̞͎͇̒̌̎̓̅̃͆͆̍̋̂̄̓͝ ̷̨̻̳͓̻̹̟̲͇̙̮̝̟͌̈́́͗͐c̸̥͉͚̯̗͍͈̰̙̙̗̈̅͗́̾̔̈̀͋̀̎̕͜͝ǫ̴̘͙͔͍̗̺̎̐ͅd̵̢̢̳͛͑̓͊̎͑͒̄̎̒̊̚͝͝͝ė̶̗̼͎̗̝͖̼̈͒͛́͊̈̿̌̈́̋͗̚̕͜͝" style="visibility: hidden;">
+        </div>
+    </div>
+    <div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    var counter = 5;
+    var interval = setInterval(function() {
+        counter--;
+        // Display 'counter' wherever you want to display it.
+        if (counter < 0) {
+            clearInterval(interval);
+            // $('#timer').html("0");
+            document.getElementById("but").style.visibility="visible";
+            document.getElementById("code").style.visibility="visible";
+            return;
+        }else{
+            $('.time').text(counter);
+            console.log("Timer --> " + counter);
+        }
+    }, 1000);
+</script>
+
+</html>
