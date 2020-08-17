@@ -1,0 +1,12 @@
+body {
+    color: white
+}
+
+.list-group-item {
+    background-color: black
+}
+
+.card {
+    background-color: black !important;
+    color: white;
+}
