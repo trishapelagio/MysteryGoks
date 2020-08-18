@@ -19,7 +19,7 @@ $(document).ready(async function() {
     $("#code").keyup(function(){
         var val = $("#code").val().trim().toLowerCase();
         if (val == "mysteryy"){
-            window.location.replace("page4.html");
+            window.location.replace("orsfgu.html");
         }
     });
 });

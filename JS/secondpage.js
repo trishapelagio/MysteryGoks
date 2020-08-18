@@ -1,10 +1,8 @@
 $(document).ready(function() {
-    console.log("hehe");
-
     $("#code").keyup(function(){
         var val = $("#code").val();
-        if(val == "1234"){
-            window.location.replace("page3.html");
+        if(val == "1342"){
+            window.location.replace("udklas.html");
         }
     })
 });

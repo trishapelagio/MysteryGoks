@@ -1,7 +1,4 @@
 $(document).ready(function() {
-    
-   
-
     $("#inputUsername").keyup(function(){
         var val1 = $("#inputUsername").val();
         var val2 = $("#inputPassword").val();
